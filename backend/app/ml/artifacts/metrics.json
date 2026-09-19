@@ -1,0 +1,127 @@
+{
+    "best_model": "Gradient Boosting",
+    "target_transform": "none",
+    "models": {
+        "Linear Regression": {
+            "rmse": 7357.543872294396,
+            "mae": 3491.212123301571,
+            "r2": 0.26011835172342723
+        },
+        "Random Forest": {
+            "rmse": 7397.416214684397,
+            "mae": 3501.405731229136,
+            "r2": 0.2520774209423874
+        },
+        "Gradient Boosting": {
+            "rmse": 7316.7531963118145,
+            "mae": 3432.963858958482,
+            "r2": 0.26829950903856303
+        }
+    },
+    "validation_models": {
+        "Linear Regression": {
+            "rmse": 7357.543872294396,
+            "mae": 3491.212123301571,
+            "r2": 0.26011835172342723
+        },
+        "Random Forest": {
+            "rmse": 7397.416214684397,
+            "mae": 3501.405731229136,
+            "r2": 0.2520774209423874
+        },
+        "Extra Trees": {
+            "rmse": 7376.94602443407,
+            "mae": 3486.1672608079552,
+            "r2": 0.25621100864419244
+        },
+        "Gradient Boosting": {
+            "rmse": 7316.7531963118145,
+            "mae": 3432.963858958482,
+            "r2": 0.26829950903856303
+        },
+        "HistGradientBoosting": {
+            "rmse": 7347.676872778396,
+            "mae": 3448.406594402692,
+            "r2": 0.26210149088002466
+        },
+        "Gradient Boosting Log Target": {
+            "rmse": 7630.004947703757,
+            "mae": 2823.3446042668816,
+            "r2": 0.20430583430786975
+        },
+        "Extra Trees Log Target": {
+            "rmse": 7607.631830429793,
+            "mae": 2853.1188607319373,
+            "r2": 0.2089653486263382
+        }
+    },
+    "baseline": {
+        "rmse": 8553.687962161373,
+        "mae": 4660.238838355674,
+        "r2": -7.692711334605917e-06
+    },
+    "final_test": {
+        "rmse": 7482.604809752324,
+        "mae": 3499.4179938904,
+        "r2": 0.276119889226648
+    },
+    "feature_importance": {
+        "prior_carrier_reimbursement": 0.5090567083499589,
+        "prior_outpatient_reimbursement": 0.16946948207668833,
+        "prior_reimbursement": 0.10953432959228694,
+        "chronic_condition_count": 0.08867627292217932,
+        "total_prior_visits": 0.07381705861057454,
+        "chronic_kidney_disease": 0.02499218397232412,
+        "prior_inpatient_reimbursement": 0.005086776630933431,
+        "reimbursement_per_visit": 0.004182065446451385,
+        "prior_outpatient_visits": 0.004072370382118258,
+        "copd": 0.0027749098227974915,
+        "prior_inpatient_visits": 0.00254240808197234,
+        "age": 0.001954849218169126,
+        "heart_failure": 0.0012409825846862528,
+        "cancer": 0.0008565088370310796,
+        "osteoporosis": 0.0007354893018925,
+        "depression": 0.0003912044049996151,
+        "rheumatoid_arthritis": 0.0003031150799330234,
+        "diabetes": 0.00018615637473212197,
+        "stroke_tia": 9.504192288941697e-05,
+        "alzheimers": 3.2086387381901985e-05,
+        "sex": 0.0,
+        "ischemic_heart_disease": 0.0
+    },
+    "medium_threshold": 4435.258797849461,
+    "high_threshold": 7840.278738574642,
+    "n_train": 76530,
+    "n_test": 19133,
+    "n_total": 95663,
+    "features": [
+        "age",
+        "sex",
+        "chronic_condition_count",
+        "alzheimers",
+        "heart_failure",
+        "chronic_kidney_disease",
+        "cancer",
+        "copd",
+        "depression",
+        "diabetes",
+        "ischemic_heart_disease",
+        "osteoporosis",
+        "rheumatoid_arthritis",
+        "stroke_tia",
+        "prior_inpatient_reimbursement",
+        "prior_outpatient_reimbursement",
+        "prior_carrier_reimbursement",
+        "prior_reimbursement",
+        "prior_inpatient_visits",
+        "prior_outpatient_visits",
+        "total_prior_visits",
+        "reimbursement_per_visit"
+    ],
+    "number_of_features": 22,
+    "target": "next_year_cost",
+    "dataset": "CMS Medicare DE-SynPUF Sample 1",
+    "prediction_year": 2009,
+    "feature_year": 2008,
+    "project": "Healthcare Cost Prediction from Claims History"
+}

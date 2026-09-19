@@ -1,0 +1,31 @@
+# Local Python environments and caches
+.venv/
+backend/.venv/
+**/__pycache__/
+*.py[cod]
+
+# Local runtime state
+.runtime/
+backend/healthcare_cost.db-journal
+backend/healthcare_cost.db-shm
+backend/healthcare_cost.db-wal
+
+# Editor and operating-system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Large/raw datasets
+data/cms/*.csv
+
+# Local database
+backend/healthcare_cost.db
+
+# Generated training data
+backend/app/ml/artifacts/training_data.csv
